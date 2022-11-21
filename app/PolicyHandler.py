@@ -30,4 +30,15 @@ def whenever배달시작됨_주문상태변경(data):
     주문 = 주문()
     주문repository.save(주문)
     
+from 배달완료됨 import 배달완료됨
+
+def whenever배달완료됨_주문상태변경(data):
+    event = 배달완료됨()
+    event = util.AutoBinding(data, event)
+    
+    주문 = 주문()
+    주문repository.save(주문)
+    주문 = 주문()
+    주문repository.save(주문)
+    
 

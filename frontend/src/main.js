@@ -60,6 +60,9 @@ pluralCaseList.push( {plural: "주문관리", pascal: "주문관리"} )
 pluralCaseList.push( {plural: "주문상세보기", pascal: "주문상세보기"} )
 pluralCaseList.push( {plural: "주문상세보기", pascal: "주문상세보기"} )
 
+pluralCaseList.push( {plural: "배달관리", pascal: "배달관리"} )
+
+pluralCaseList.push( {plural: "배달대상주문목록", pascal: "배달대상주문목록"} )
 
 Vue.prototype.$ManagerLists.forEach(function(item, idx) {
   pluralCaseList.forEach(function(tmp) {

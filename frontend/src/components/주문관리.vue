@@ -17,6 +17,10 @@
         </v-card-title >
 
         <v-card-text>
+            <Boolean label="조리시작여부" v-model="value.조리시작여부" :editMode="editMode"/>
+            <Boolean label="조리완료여부" v-model="value.조리완료여부" :editMode="editMode"/>
+            <Boolean label="배달시작여부" v-model="value.배달시작여부" :editMode="editMode"/>
+            <Boolean label="주문취소여부" v-model="value.주문취소여부" :editMode="editMode"/>
         </v-card-text>
 
         <v-card-actions>

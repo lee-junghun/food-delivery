@@ -64,8 +64,6 @@ public class PolicyHandler{
         
 
         // Sample Logic //
-        주문관리.주문정보받음(event);
-        
 
         
 
@@ -81,8 +79,36 @@ public class PolicyHandler{
         
 
         // Sample Logic //
-        주문관리.주문취소처리(event);
+
         
+
+    }
+
+    @StreamListener(value=KafkaProcessor.INPUT, condition="headers['type']=='배달승인됨'")
+    public void whenever배달승인됨_배달시작처리(@Payload 배달승인됨 배달승인됨){
+
+        배달승인됨 event = 배달승인됨;
+        System.out.println("\n\n##### listener 배달시작처리 : " + 배달승인됨 + "\n\n");
+
+
+        
+
+        // Sample Logic //
+
+        
+
+    }
+
+    @StreamListener(value=KafkaProcessor.INPUT, condition="headers['type']=='배달완료됨'")
+    public void whenever배달완료됨_배달완료처리(@Payload 배달완료됨 배달완료됨){
+
+        배달완료됨 event = 배달완료됨;
+        System.out.println("\n\n##### listener 배달완료처리 : " + 배달완료됨 + "\n\n");
+
+
+        
+
+        // Sample Logic //
 
         
 

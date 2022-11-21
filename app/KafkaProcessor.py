@@ -5,6 +5,7 @@ import json
 from config import config_reader
 from PolicyHandler import whenever배달시작됨_주문상태변경
 from PolicyHandler import whenever배달시작됨_주문상태변경
+from PolicyHandler import whenever배달완료됨_주문상태변경
 
 class StreamHandler():
 	
@@ -32,5 +33,6 @@ def consume(msg):
     data = json.loads(my_json)
     if data['eventType'] == "배달시작됨":
         whenever배달시작됨_주문상태변경(data)
-    if data['eventType'] == "배달시작됨":
+    if data['eventType'] == "배달시작됨""배달완료됨":
         whenever배달시작됨_주문상태변경(data)
+        whenever배달완료됨_주문상태변경(data)

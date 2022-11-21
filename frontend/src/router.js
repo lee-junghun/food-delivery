@@ -33,6 +33,11 @@ import 주문상세보기ViewDetail from "./components/주문상세보기ViewDet
 import 주문상세보기View from "./components/주문상세보기View"
 import 주문상세보기ViewDetail from "./components/주문상세보기ViewDetail"
 
+import 배달관리Manager from "./components/listers/배달관리Cards"
+import 배달관리Detail from "./components/listers/배달관리Detail"
+
+import 배달대상주문목록View from "./components/배달대상주문목록View"
+import 배달대상주문목록ViewDetail from "./components/배달대상주문목록ViewDetail"
 
 export default new Router({
     // mode: 'history',
@@ -162,6 +167,27 @@ export default new Router({
                 component: 주문상세보기ViewDetail
             },
 
+            {
+                path: '/배달관리',
+                name: '배달관리Manager',
+                component: 배달관리Manager
+            },
+            {
+                path: '/배달관리/:id',
+                name: '배달관리Detail',
+                component: 배달관리Detail
+            },
+
+            {
+                path: '/배달대상주문목록',
+                name: '배달대상주문목록View',
+                component: 배달대상주문목록View
+            },
+            {
+                path: '/배달대상주문목록/:id',
+                name: '배달대상주문목록ViewDetail',
+                component: 배달대상주문목록ViewDetail
+            },
 
 
     ]

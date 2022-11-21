@@ -5,6 +5,18 @@
         </v-card-title>
 
         <v-card-text>
+            <div>
+                <Boolean label="조리시작여부" v-model="item.조리시작여부" :editMode="editMode" @change="change" />
+            </div>
+            <div>
+                <Boolean label="조리완료여부" v-model="item.조리완료여부" :editMode="editMode" @change="change" />
+            </div>
+            <div>
+                <Boolean label="배달시작여부" v-model="item.배달시작여부" :editMode="editMode" @change="change" />
+            </div>
+            <div>
+                <Boolean label="주문취소여부" v-model="item.주문취소여부" :editMode="editMode" @change="change" />
+            </div>
         </v-card-text>
 
         <v-card-actions>

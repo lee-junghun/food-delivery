@@ -14,6 +14,18 @@
                         <v-list-item-content>
                             <v-list-item-title>
                             </v-list-item-title>
+                            <v-list-item-subtitle>
+                                조리시작여부 :  {{item.조리시작여부 }}
+                            </v-list-item-subtitle>
+                            <v-list-item-subtitle>
+                                조리완료여부 :  {{item.조리완료여부 }}
+                            </v-list-item-subtitle>
+                            <v-list-item-subtitle>
+                                배달시작여부 :  {{item.배달시작여부 }}
+                            </v-list-item-subtitle>
+                            <v-list-item-subtitle>
+                                주문취소여부 :  {{item.주문취소여부 }}
+                            </v-list-item-subtitle>
                         </v-list-item-content>
 
                         <v-list-item-action>
@@ -65,6 +77,14 @@
                 if(val != undefined) {
                     var arr = this.list[val]._links.self.href.split('/');
                     obj['id'] = arr[4]; 
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                     
                     this.$emit('selected', obj);
                 }

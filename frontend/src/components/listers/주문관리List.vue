@@ -10,10 +10,18 @@
                     <v-list-item-content>
                         <v-list-item-title style="margin-bottom:10px;">
                             
+                            
+                            
+                            
+                            
                         </v-list-item-title>
 
                         <v-list-item-subtitle style="font-size:25px; font-weight:700;">
                             [ Id :  {{data.id }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            [ 조리시작여부 :  {{data.조리시작여부 }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            [ 조리완료여부 :  {{data.조리완료여부 }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            [ 배달시작여부 :  {{data.배달시작여부 }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            [ 주문취소여부 :  {{data.주문취소여부 }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         </v-list-item-subtitle>
 
                     </v-list-item-content>
@@ -95,6 +103,10 @@
             this.values = temp.data._embedded.주문관리s;
             
             this.newValue = {
+                '조리시작여부': false,
+                '조리완료여부': false,
+                '배달시작여부': false,
+                '주문취소여부': false,
             }
         },
         methods: {

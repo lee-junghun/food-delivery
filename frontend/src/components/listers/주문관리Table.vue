@@ -67,6 +67,10 @@
             headers: 
                 [
                     { text: "id", value: "id" },
+                    { text: "조리시작여부", value: "조리시작여부" },
+                    { text: "조리완료여부", value: "조리완료여부" },
+                    { text: "배달시작여부", value: "배달시작여부" },
+                    { text: "주문취소여부", value: "주문취소여부" },
                 ],
             주문관리 : [],
             newValue: {},
@@ -84,6 +88,10 @@
             this.values = temp.data._embedded.주문관리s;
 
             this.newValue = {
+                '조리시작여부': false,
+                '조리완료여부': false,
+                '배달시작여부': false,
+                '주문취소여부': false,
             }
         },
         methods: {
